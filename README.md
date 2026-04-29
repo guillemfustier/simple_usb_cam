@@ -18,9 +18,12 @@ Minimal ROS 2 USB camera publisher. Python only. Deps: `rclpy`, `sensor_msgs`, `
 | `jpeg_quality` | 80 | 0–100 |
 | `fourcc` | `MJPG` | `YUYV`, `MJPG`, `H264`... or empty |
 
-## Build
+## Installation and Build
 ```bash
-cd ~/Documents/Projects/pruebas_ws
+cd <your_ws>/src
+git clone https://github.com/guillemfustier/simple_usb_cam.git
+
+cd <your_ws>
 colcon build --packages-select simple_usb_cam
 source install/setup.bash
 ```
